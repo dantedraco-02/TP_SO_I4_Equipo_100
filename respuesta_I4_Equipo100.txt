@@ -1,0 +1,19 @@
+Yedro, Alejando
+Cortes, Tamara
+Quintas, Draco
+
+A- ¿Qué color de fondo tiene su página en el TESTING ?
+
+Blue.
+
+B- ¿Qué color de fondo tiene su página en el DESARROLLO ?
+
+Yellow.
+
+C- ¿Qué color de fondo tiene su página en el MASTER?
+
+Yellow.
+
+D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA ?
+
+El de beta.
