@@ -17,3 +17,25 @@ Yellow.
 D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA ?
 
 El de beta.
+
+E- ¿Algún integrante tuvo problemas al hacer el push?
+
+Sí, tuvo problemas Gamma. Al hacer git push lo rechazó (rejected, non-fast-forward).
+
+F- ¿Qué problemas surgieron?
+
+El push fue rechazado porque el remoto de TESTING tenía commits que Gamma no tenía en el repo local: los <p> que Tamara y Alejandro ya habían subido. Al hacer git pull para traerlos apareció un conflicto en index.html, porque los tres modificamos el mismo lugar del archivo. Se resolvió a mano dejando los tres <p>, sacando las marcas como ===== y >>>>>>>, y después git add, git commit y git push.
+
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+
+git push -f: Fuerza el push y pisa los commits de los demás en el remoto, así que se pierde trabajo.
+
+H- ¿Qué sucede si cada uno utiliza el push-f?
+
+Si cada uno usa push -f, cada push borra del remoto los commits del anterior. Al final solo queda el <p> del último que empujó, y se pierde el trabajo de los otros dos.
+
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+
+Saltaría de nuevo un conflicto en estilo.css (yellow contra blue), y se resuelve igual que en el paso 16 del TP.
